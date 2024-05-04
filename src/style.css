@@ -1,0 +1,83 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+    overflow-x: hidden;
+}
+.App {
+    position: relative;
+}
+h1, h2 {
+    margin: 1em 0;
+}
+p {
+    padding-bottom: 0.7em;
+}
+header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #272b36;
+    z-index: 10;
+}
+.mainmenu > li > a, .mainmenu .parent > a {
+    font-weight: 700;
+}
+.submenu > .parent > a {
+    font-size: 18px;
+}
+/*--------------------------------------------Start Products Categories--------------------------------------------*/
+.categories-list > li > a, .sub-categories > li > a, .products > li > a {
+    display: block;
+    border: 3px solid #a4a4a4;
+}
+/*--------------------------------------------End Products Categories--------------------------------------------*/
+#main {
+    padding-top: 90px;
+    min-height: calc(100vh - 90px);
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.skeleton-loading > .skeleton-row > .skeleton-circle, .skeleton-loading > .skeleton-row > .skeleton-text {
+    position: relative;
+    background-color: #f7f7f7;
+    border-radius: 0.25em;
+}
+.skeleton-loading > .skeleton-row > .skeleton-circle {
+    min-height: 5em;
+}
+.skeleton-loading > .skeleton-row > .skeleton-text {
+    min-height: 2.5em;
+}
+.skeleton-row > div::before {
+    animation: skeleton-loading infinite 1s linear alternate;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25em;
+}
+/*--------------------------------------------Start About--------------------------------------------*/
+.aboutimg {
+    height: 230px;
+    background: /*[background-color]*/ url('../src/logo.svg') no-repeat fixed center;
+
+}
+/*--------------------------------------------End About--------------------------------------------*/
+#footer {
+    background-color: #282c34;
+}
+/*--------------------------------------------Start Animations--------------------------------------------*/
+@keyframes skeleton-loading {
+    0% {
+        background-color: #c2cfd6;
+      }
+      100% {
+        background-color: #f0f3f5;
+      }
+}
+/*--------------------------------------------End Animations--------------------------------------------*/

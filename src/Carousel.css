@@ -1,0 +1,39 @@
+.slick-prev, .slick-next {
+    z-index: 1;
+    width: auto;
+    height: auto;
+}
+.slick-prev:before, .slick-next:before {
+    font-size: 32px;
+}
+.slick-prev {
+    left: 25px;
+}
+.slick-next {
+    right: 25px;
+}
+.slick-slide img {
+    height: 600px;
+    width: 100%;
+    animation: App-logo-spin infinite 20s linear;
+    pointer-events: none;
+}
+.slick-dots {
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+}
+.slick-dots li button:before, .slick-dots li.slick-active button:before {
+    color: #fff;
+}
+.slick-slide .caption {
+    color: #fff;
+}
+
+/*====================================================================Start Responsive====================================================================*/
+@media only screen and (max-width: 576px) {
+    .slick-slide img {
+        height: 300px;
+    }
+}
+/*====================================================================End Responsive====================================================================*/

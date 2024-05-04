@@ -1,0 +1,71 @@
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 0 15px;
+    }
+    .mobile-menu > a > svg > path {
+        transition: 0.3s opacity ease-out;
+    }
+    .mobile-menu.active > a > svg > path {
+        transition: 0.3s opacity ease-in;
+        opacity: 0.5;
+    }
+    .menu > .mobile-menu > a {
+        font-size: 40px;
+    }
+    .mainmenu {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 90px;
+        width: 100%;
+        background-color: #708090;
+        max-height: 500px;
+        overflow-y: auto;
+    }
+    .mainmenu > li > a {
+        padding: 0 10px;
+    }
+    .parent-menu > a, .parent-menu > svg {
+        transition: 0.3s all ease-out;
+    }
+    .parent-menu.active > a, .parent-menu.active > svg {
+        color: #272b36;
+        transition: 0.3s all ease-in;
+    }
+    .parent-menu > svg {
+        cursor: pointer;
+    }
+    .parent-menu > .submenu {
+        overflow: hidden;
+        background-color: #272b36;
+        border-top: 5px inset;
+    }
+    .parent-menu > .submenu > li {
+        width: 50%;
+        float: left;
+    }
+    .mainmenu::-webkit-scrollbar {
+        width: 5px;
+    }
+    .mainmenu::-webkit-scrollbar-track {
+        background-color: #fff;
+    }
+    .mainmenu::-webkit-scrollbar-thumb {
+        background-color: #111827;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+}
+
+@media only screen and (min-width: 320px) {
+    .skeleton-loading > .skeleton-row {
+        width: 50%;
+        float: left;
+    }
+    .categories-list > li, .sub-categories > li, .products > li {
+        width: 50%;
+    }
+}
